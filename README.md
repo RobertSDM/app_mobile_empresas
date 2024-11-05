@@ -21,6 +21,9 @@ temos a tela que mostra dados que nós coletamos,
 a tela de visulização e adição de produtos \
 a tela de configurações e a tela que nos permite alterar a senha. \
 
+# Metodo de salvamento
+Como metodo de armazenamento assíncrono, decidimos utilizar o metodo SharedPreferences devido a pouca complexidade dos dados que presisávamos armazenar.
+
 # Diagrama da Arquitetura do projeto
 
 ![](assets/arquitetura_pastas.jpg)
@@ -31,4 +34,5 @@ a tela de configurações e a tela que nos permite alterar a senha. \
 - android studio
 - okhttp
 - Gson
-- Como metodo de armazenamento assíncrono, decidimos utilizar o metodo SharedPreferences devido a pouca complexidade dos dados que presisávamos armazenar.
+
+
