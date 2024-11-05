@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="-20dp">
+
+    <TextView
+        android:id="@+id/recSenha_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/recSenha_title"
+        android:textColor="@color/dark_purple"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="192dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/recSenha_label_conf_senha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/recSenha_confirmar_nova_senha_label"
+        android:textColor="@color/dark_purple"
+        app:layout_constraintBottom_toTopOf="@+id/confirmar_nova_senha"
+        app:layout_constraintStart_toStartOf="@+id/confirmar_nova_senha" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/recSenha_login_link"
+        android:textColor="@color/primary_purple"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView6"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/recSenha_login_calltoaction"
+        app:layout_constraintEnd_toEndOf="@+id/trocar_senha_btn"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="@+id/trocar_senha_btn"
+        app:layout_constraintTop_toBottomOf="@+id/trocar_senha_btn" />
+
+    <Button
+        android:id="@+id/trocar_senha_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="@string/recSenha_trocar_senha_btn"
+        app:layout_constraintEnd_toEndOf="@+id/confirmar_nova_senha"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="@+id/confirmar_nova_senha"
+        app:layout_constraintTop_toBottomOf="@+id/confirmar_nova_senha" />
+
+    <TextView
+        android:id="@+id/recSenha_label_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/recSenha_email_label"
+        android:textColor="@color/dark_purple"
+        app:layout_constraintBottom_toTopOf="@+id/email"
+        app:layout_constraintStart_toStartOf="@+id/email" />
+
+    <EditText
+        android:id="@+id/confirmar_nova_senha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/nova_senha"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/nova_senha"
+        app:layout_constraintTop_toBottomOf="@+id/nova_senha" />
+
+    <TextView
+        android:id="@+id/recSenha_label_nova_senha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/recSenha_nova_senha_label"
+        android:textColor="@color/dark_purple"
+        app:layout_constraintBottom_toTopOf="@+id/nova_senha"
+        app:layout_constraintStart_toStartOf="@+id/nova_senha" />
+
+    <EditText
+        android:id="@+id/nova_senha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/email"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/email"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/button_registrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="@string/registrar_registrar_btn_text"
+        app:layout_constraintEnd_toEndOf="@+id/confirmar_senha_registrar"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/confirmar_senha_registrar"
+        app:layout_constraintTop_toBottomOf="@+id/confirmar_senha_registrar" />
+
+    <TextView
+        android:id="@+id/entre_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/registrar_entre_link_text"
+        android:textColor="@color/primary_purple"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/login_calltoaction"
+        app:layout_constraintStart_toStartOf="@+id/login_calltoaction"
+        app:layout_constraintTop_toBottomOf="@+id/login_calltoaction" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/registrar_email_label"
+        android:textColor="@color/dark_purple"
+        app:layout_constraintBottom_toTopOf="@+id/email_registrar"
+        app:layout_constraintStart_toStartOf="@+id/email_registrar" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/registrar_senha_label"
+        android:textColor="@color/dark_purple"
+        app:layout_constraintBottom_toTopOf="@+id/senha_registrar"
+        app:layout_constraintStart_toStartOf="@+id/senha_registrar" />
+
+    <EditText
+        android:id="@+id/senha_registrar"
+        android:layout_width="255dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/nome_registrar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/nome_registrar"
+        app:layout_constraintTop_toBottomOf="@+id/email_registrar" />
+
+    <EditText
+        android:id="@+id/nome_registrar"
+        android:layout_width="255dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="144dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/email_registrar"
+        android:layout_width="255dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/nome_registrar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/nome_registrar"
+        app:layout_constraintTop_toBottomOf="@+id/nome_registrar" />
+
+    <TextView
+        android:id="@+id/login_calltoaction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/registrar_ja_tem_login_calltoaction_text"
+        app:layout_constraintEnd_toEndOf="@+id/button_registrar"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="@+id/button_registrar"
+        app:layout_constraintTop_toBottomOf="@+id/button_registrar" />
+
+    <EditText
+        android:id="@+id/confirmar_senha_registrar"
+        android:layout_width="255dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/senha_registrar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/senha_registrar"
+        app:layout_constraintTop_toBottomOf="@+id/senha_registrar" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="@string/registrar_confirmacao_senha_label"
+        android:textColor="@color/dark_purple"
+        app:layout_constraintBottom_toTopOf="@+id/confirmar_senha_registrar"
+        app:layout_constraintStart_toStartOf="@+id/confirmar_senha_registrar" />
+
+    <TextView
+        android:id="@+id/regitrar_label_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/registrar_nome_label"
+        android:textColor="@color/dark_purple"
+        app:layout_constraintBottom_toTopOf="@+id/nome_registrar"
+        app:layout_constraintStart_toStartOf="@+id/nome_registrar" />
+
+    <TextView
+        android:id="@+id/registrar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/registrar_title"
+        android:textColor="@color/dark_purple"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

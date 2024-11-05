@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">ChallengeEntrega</string>
+<!--  Configuracao Tela  -->
+    <string name="configuracao_title">Configurações</string>
+    <string name="configuracao_notificacao_option">Notificação</string>
+    <string name="configuracao_editar_perfil_option">Editar Perfil</string>
+    <string name="configuracao_termos_condicao_option">Termos Condicao</string>
+    <string name="configuracao_mais_servicos_option">Mais Servicos</string>
+    <string name="configuracao_ajuda_option">Ajuda</string>
+    <string name="configuracao_sobre_option">Sobre</string>
+    <string name="configuracao_sair_option">Sair</string>
+    <string name="configuracao_excluir_conta_option">Excluir Conta</string>
+<!--  Login Tela  -->
+    <string name="login_title">Login</string>
+    <string name="login_nome_label">Nome</string>
+    <string name="login_email_label">Email</string>
+    <string name="login_senha_label">Senha</string>
+    <string name="login_lembrar_de_mim_text">Lembrar de mim</string>
+    <string name="login_esqueci_a_senha_text">Esqueci a senha</string>
+    <string name="login_entrar_btn_text">Entrar</string>
+    <string name="login_ainda_nao_registrado_calltoaction_text">Ainda não é registrado?</string>
+    <string name="login_registres_se_link_text">Registre-se</string>
+<!--  Registrar Tela  -->
+    <string name="registrar_lembrar_de_mim_text">Lembrar de mim</string>
+    <string name="registrar_nome_label">Nome</string>
+    <string name="registrar_email_label">Email</string>
+    <string name="registrar_senha_label">Senha</string>
+    <string name="registrar_confirmacao_senha_label">Confirme sua Senha</string>
+    <string name="registrar_registrar_btn_text">Registrar</string>
+    <string name="registrar_ja_tem_login_calltoaction_text">Já tem um login?</string>
+    <string name="registrar_entre_link_text">Entre</string>
+    <string name="registrar_title">Registrar</string>
+<!--  Analise Mercado Tela  -->
+    <string name="anMercado_title">Analise de Mercado</string>
+    <string name="anMercado_cliques_convertidos">Cliques Convertidos</string>
+    <string name="anMercado_tempo_medio_navegacao">Tempo medio navegacao continua</string>
+    <string name="anMercado_taxa_redirecionamento">Taxa de redirecionamento de anuncios marketing</string>
+    <string name="anMercado_filtro_tempo_cliques">Última semana</string>
+    <string name="anMercado_time_label">min</string>
+    <string name="anMercado_config_btn">Configuração</string>
+<!--  Recuperar Senha Tela  -->
+    <string name="recSenha_title">Esqueci a senha</string>
+    <string name="recSenha_email_label">Email</string>
+    <string name="recSenha_nova_senha_label">Nova senha</string>
+    <string name="recSenha_confirmar_nova_senha_label">Confirmar Nova senha</string>
+    <string name="recSenha_trocar_senha_btn">Trocar senha</string>
+    <string name="recSenha_login_calltoaction">Mudou de ideia?</string>
+    <string name="recSenha_login_link">Entre</string>
+</resources>

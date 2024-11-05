@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true">
+
+    <TextView
+        android:id="@+id/configuracao_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/configuracao_title"
+        android:textColor="@color/dark_purple"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container_notificacao_option"
+        android:layout_width="293dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/light_gray"
+        android:clickable="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/container_editar_perfil_option">
+
+        <TextView
+            android:id="@+id/text_notificacao_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:text="@string/configuracao_notificacao_option"
+            android:textColor="@color/dark_purple"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/switch_button"
+            android:layout_width="61dp"
+            android:layout_height="38dp"
+            android:layout_marginEnd="28dp"
+            android:checkable="true"
+            android:checked="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.428" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container_termos_condicao_option"
+        android:layout_width="293dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/light_gray"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/container_notificacao_option">
+
+        <TextView
+            android:id="@+id/text_termos_condicao_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:text="@string/configuracao_termos_condicao_option"
+            android:textColor="@color/dark_purple"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container_mais_servicos_option"
+        android:layout_width="293dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/light_gray"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/container_termos_condicao_option">
+
+        <TextView
+            android:id="@+id/text_mais_servicos_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:text="@string/configuracao_mais_servicos_option"
+            android:textColor="@color/dark_purple"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container_ajuda_option"
+        android:layout_width="293dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/light_gray"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/container_mais_servicos_option">
+
+        <TextView
+            android:id="@+id/text_ajuda_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:text="@string/configuracao_ajuda_option"
+            android:textColor="@color/dark_purple"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container_sobre_option"
+        android:layout_width="293dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/light_gray"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toTopOf="@+id/container_sair_option"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/text_sobre_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:text="@string/configuracao_sobre_option"
+            android:textColor="@color/dark_purple"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container_sair_option"
+        android:layout_width="293dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="28dp"
+        android:background="@color/vivid_red"
+        app:layout_constraintBottom_toTopOf="@+id/text_excluir_conta_option"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/text_sair_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:text="@string/configuracao_sair_option"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/text_excluir_conta_option"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:text="@string/configuracao_excluir_conta_option"
+        android:textColor="@color/medium_gray"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container_editar_perfil_option"
+        android:layout_width="293dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="120dp"
+        android:background="@color/dark_purple"
+        android:clickable="true"
+        android:clipChildren="false"
+        android:focusable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/text_editar_perfil_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/configuracao_editar_perfil_option"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
